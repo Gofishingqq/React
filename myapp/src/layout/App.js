@@ -3,6 +3,7 @@ import Home from '@/views/home';
 import Cart from '@/views/cart';
 import Kind from '@/views/kind';
 import Release from '@/views/release';
+import Purchase from '@/views/user/purchase/purchase'
 import User from '@/views/user';
 import Merchant from '@/views/merchant';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
@@ -14,6 +15,9 @@ const App = () => (
       <Route path = "/kind" component = { Kind }/>
       <Route path = "/release" component = { Release }/>
       <Route path = "/cart" component = { Cart }/>
+
+      <Route path = "/user/purchase" component = { Purchase }/>
+
       <Route path = "/user" component = { User }/>
       <Route path = "/merchant" component = { Merchant } />
       <Redirect to = "/home"/>

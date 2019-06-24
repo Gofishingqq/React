@@ -1,0 +1,65 @@
+@import '@/lib/reset.scss';
+.option{
+  @include flexbox();
+  @include flex-direction(column);
+  @include rect(100%, auto);
+  .option-top{
+    @include flexbox();
+    @include rect(100%, 1.2rem);
+    justify-content: space-around;
+    align-items: center;
+    li{
+      @include rect(.6rem, .64rem);
+      border: 0.01rem solid #D5D0D0;
+      border-radius: .08rem;
+      img{
+        @include rect(100%, 100%);
+      }
+    }
+  }
+  .option-in{
+    @include flexbox();
+    @include rect(100%, auto);
+    li{
+      @include rect(1.75rem, 1.2rem);
+      border: 0.01rem solid #D5D0D0;
+      border-radius: .08rem;
+      margin: 0 .06rem 0 .09rem;
+    }
+  }
+  .like{
+    @include flexbox();
+    @include rect(100%, .32rem);
+    justify-content: center;
+    align-items: center;
+    b{
+      @include rect(0.4rem, .01rem);
+      background: #dfdfdf;
+      margin: 0 .03rem;
+    }
+    span{
+      font: 0.12rem "";
+      color:#DDD8D8 ;
+    }
+  }
+  .option-bottom{
+    @include flexbox();
+    flex-wrap: wrap;
+    @include rect(100%, auto);
+    justify-content: center;
+    li{
+      @include flexbox();
+      @include flex-direction(column);
+      @include rect(1.60rem, auto );
+      margin: 0.05rem 0.05rem;
+      img{
+        @include rect(100%, 1.22rem );
+        background: #eee;
+      }
+      p{
+        @include rect(100%, .25rem );
+        font: 0.12rem/0.2rem"";
+      }
+    }
+  }
+}

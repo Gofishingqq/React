@@ -5,9 +5,9 @@ import Kind from '@/views/kind/store';
 import Release from '@/views/release/store';
 import User from '@/views/user/store';
 import Particulars from '@/views/particulars/store';
-import Merchant from '@/views/merchant/store';
+
 const reducer = combineReducers ({
-  Home, Cart, Kind, Release, User,Particulars,Merchant
+  Home, Cart, Kind, Release, User,Particulars
 })
 const Duo = createStore(reducer);
 export default Duo

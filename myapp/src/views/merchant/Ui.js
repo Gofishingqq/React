@@ -3,13 +3,25 @@ import Search from '@/components/home/Search';
 import Banner from '@/components/home/Banner';
 import OPtion from '@/components/merchant/Option';
 import '@/views/merchant/merchant.scss';
+import axios from 'axios'
 
 class merchant extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      number: [1,2]
+    }
+  }
   componentDidMount () {
-    // console.log(this.props)
-    this.props.getyMerchant();
+    axios.get('http://po.funshion.com/v6/config/channelhome?nav_id=6&ves=1&cl=mweb&uc=215').then(src => {
+      console.log(src.data.blocks[0].contents)
+      this.setState({
+        number:src.data.blocks[0].contents
+      })
+    })
   }
   render () {
+    console.log(this)
     return (
       <div className="merchant-box">
         <header className="header">
@@ -18,7 +30,7 @@ class merchant extends React.Component {
         </header>
       <div className="merchant-package">
         <Search />
-        <Banner bannerlist= {this.props.merchantBe}/>
+        <Banner bannerlist= { this.state.number }/>
         <OPtion />
       </div>
       </div>

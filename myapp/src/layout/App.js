@@ -4,7 +4,7 @@ import Cart from '@/views/cart';
 import Kind from '@/views/kind';
 import Release from '@/views/release';
 import User from '@/views/user';
-import Merchant from '@/views/merchant';
+import Merchant from '@/views/merchant/Ui';
 import { Switch, Route, Redirect, NavLink } from 'react-router-dom';
 import '@/app.scss';
 const App = () => (

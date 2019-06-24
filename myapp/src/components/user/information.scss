@@ -1,0 +1,38 @@
+@import '@/lib/reset.scss';
+.box{
+  @include font-weight(bold);
+  .top{
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include rect(100%, .45rem);
+    @include background-color(#F2F1F1);
+    span:nth-child(1){
+      @include font-size(.1rem);
+      @include margin(0 0 0 0.1rem);
+    }
+    span:nth-child(2){
+      @include font-size(.15rem);
+    }
+    span:nth-child(3){
+      @include font-size(.12rem);
+      @include margin(0 0.1rem 0 0);
+    }
+  }
+  .information-ui{
+    li{
+      @include flexbox();
+      @include padding(.1rem .1rem .1rem .1rem);
+      @include justify-content(space-between);
+      @include align-items(center);
+      border-bottom:1px solid #ccc;
+      @include font-size(.14rem);
+      div{
+        @include rect(.5rem, .5rem);
+        border:1px solid #ccc;
+        border-radius:50%;
+        margin-left:60%;
+      }
+    }
+  }
+}

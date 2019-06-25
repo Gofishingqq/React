@@ -5,26 +5,40 @@
   @include rect(100%, auto);
   .option-top{
     @include flexbox();
-    @include rect(100%, 1.2rem);
+    margin: .3rem .1rem;
+    width: 3.5rem;
     justify-content: space-around;
     align-items: center;
+    background: #fff;
     li{
-      @include rect(.6rem, .64rem);
-      border: 0.01rem solid #D5D0D0;
-      border-radius: .08rem;
-      img{
+      @include rect(.86rem, .55rem);
+      @include flexbox();
+      @include align-items(center);
+      color: #666;
+      b{
         @include rect(100%, 100%);
+        font: 0.14rem/.55rem"";
+        text-align: center;
+      }
+      span{
+        justify-content: right;
+        font: 0.15rem"";
       }
     }
   }
   .option-in{
     @include flexbox();
     @include rect(100%, auto);
+    justify-content: center;
+    background: #fff;
     li{
       @include rect(1.75rem, 1.2rem);
       border: 0.01rem solid #D5D0D0;
-      border-radius: .08rem;
-      margin: 0 .06rem 0 .09rem;
+      margin:0.1rem 0 .29rem 0;
+      
+    }
+    b{
+      width: .03rem;
     }
   }
   .like{

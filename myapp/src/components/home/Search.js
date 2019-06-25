@@ -3,7 +3,7 @@ import '@/components/homeSass/Search.scss';
 const SearchBar = () => (
   <div className="SearchBar">
     <form className= "for">
-      <input type = "text" placeholder="搜索您想要的东西" className= "text"/>
+      <input type = "text" placeholder="热门“AJ疯抢999元”" className= "text"/>
       <input type = "button" value="消息" className= "button"/>
     </form>
   </div>

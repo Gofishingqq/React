@@ -3,13 +3,14 @@ import '../homeSass/OPtion.scss'
 const Option = () => (
   <div className = "option">
    <ul className = "option-top">
-     <li>鉴定</li>
-     <li>养护</li>
-     <li>求购</li>
-     <li>商城</li>
+     <li><b>鉴定</b><span>|</span></li>
+     <li><b>养护</b><span>|</span></li>
+     <li><b>求购</b><span>|</span></li>
+     <li><b>商城</b></li>
    </ul>
   <ul className = "option-in">
     <li>今日</li>
+    <b></b>
     <li>区域</li>
   </ul>
   <h4 className="like"><b></b><span>猜你喜欢</span><b></b></h4>

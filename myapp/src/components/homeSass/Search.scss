@@ -2,6 +2,7 @@
 .SearchBar{
   @include flexbox();
   @include rect(100%, .44rem);
+  background: #fff;
   .for{
     @include flexbox();
     @include rect(100%, 100%);
@@ -9,14 +10,14 @@
     @include justify-content();
     .text, .button{
       border: 0;
-      border: .01rem solid #BBBBBB;
+      border: .01rem solid #CCCCCC;
     }
     .text {
       @include rect(2.95rem, .26rem);
       margin-right: 0.1rem;
       padding-left: 0.15rem;
-      border-radius: 0.05rem;
-      color: #A29D9D;
+      border-radius: 0.13rem;
+      color: #999999;
     }
     .button {
       @include rect(0.36rem, .26rem);

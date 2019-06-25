@@ -2,14 +2,15 @@ import React from 'react';
 import Search from '@/components/home/Search';
 import Banner from '@/components/home/Banner';
 import OPtion from '@/components/merchant/Option';
+import Ban from '@/components/merchant/Banner'
 import '@/views/merchant/merchant.scss';
-import axios from 'axios'
+import axios from 'axios';
 
 class merchant extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      number: [1,2]
+      number: [1,2,3,4]
     }
   }
   componentDidMount () {
@@ -31,6 +32,7 @@ class merchant extends React.Component {
       <div className="merchant-package">
         <Search />
         <Banner bannerlist= { this.state.number }/>
+        <Ban bannerlist= { this.state.number }/>
         <OPtion />
       </div>
       </div>

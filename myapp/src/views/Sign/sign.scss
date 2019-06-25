@@ -1,0 +1,174 @@
+@import '@/lib/reset.scss';
+.a-box{
+  @include background-color(#fff);
+  @include rect(100%, 100%);
+  @include font-weight(bold);
+  .a-portrait{
+    @include rect(.78rem, .75rem);
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    @include margin(1rem auto 0);
+  }
+  .a-nic{
+    @include text-align();
+    @include font-size(.12rem);
+    @include margin(0.2rem 0 1rem 0)
+  }
+  .button{
+    @include line-height(.46rem);
+    @include margin(.3rem auto 0 );
+    @include rect(1.97rem, .46rem);
+    border:1px solid #ccc;
+    border-radius: .23rem;
+    @include text-align(center);
+    @include font-size(.2rem);
+  }
+  .a-other{
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include margin(.8rem 0 0 0);
+    p:nth-child(1){
+      @include rect(.54rem, 1px);
+      border:1px solid #ccc;
+      @include background-color(#ccc);
+    }
+    p:nth-child(2){
+      @include font-size(.12rem);
+      @include margin(0 0.1rem 0 0.1rem)
+    }
+    p:nth-child(3){
+      @include rect(.54rem, 1px);
+      border:1px solid #ccc;
+      @include background-color(#ccc);
+    }
+  }
+  .a-logo{
+    @include flexbox();
+    @include justify-content(center);
+    @include margin(0.3rem 0 0 0);
+    span:nth-child(1){
+      @include font-size(.26rem);
+    }
+    span:nth-child(2){
+      @include font-size(.29rem);
+      @include margin(0 0.6rem 0 0.6rem);
+    }
+    span:nth-child(3){
+      @include font-size(.3rem);
+    }
+  }
+}
+
+.s-box{
+  @include font-weight(bold);
+  @include background-color(#fff);
+  @include rect(100%, 100%);
+  .s-top{
+    @include rect(100%, .6rem);
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include font-size(.13rem);
+    @include font-weight(bold);
+    @include padding(0 0.15rem 0);
+  }
+  .s-title{
+    @include font-size(.26rem);
+    @include text-align(center);
+    @include margin(0.4rem 0 0 0);
+  }
+  form{
+    div{
+      @include flexbox();
+      @include align-items(center);
+      @include margin(.2rem auto 0);
+      @include rect(3rem, .42rem);
+    }
+    input{
+      @include margin(0 0 0 0.1rem);
+      @include font-size(.12rem);
+      @include color(#000);
+      @include rect(2.5rem, .4rem);
+      border:0;
+    }
+    .s-tel{
+      border-bottom:1px solid #ccc;
+      span{
+        @include margin(0 0 0 0.1rem);
+        @include rect(0.2rem, 0.2rem);
+        @include font-size(.16rem);
+      }
+    }
+    .s-password{
+      border-bottom:1px solid #ccc;
+      span{
+        @include margin(0 0 0 0.1rem);
+        @include rect(0.2rem, 0.2rem);
+        @include font-size(.18rem);
+      }
+    }
+    .s-type{
+      span:nth-child(1){
+        @include margin(0 0 0 0.1rem);
+
+        @include font-size(.18rem);
+      }
+      span:nth-child(2){
+        @include margin(0 1rem 0 0.15rem);
+      }
+      span{
+        @include font-size(.14rem);
+      }
+    }
+  }
+  .s-sign{
+    @include text-align(center);
+    @include line-height(.46rem);
+    @include font-size(.2rem);
+    @include rect(1.97rem, .46rem);
+    border:1px solid #ccc;
+    border-radius: .23rem;
+    @include margin(0.4rem auto 0);
+  }
+  .s-warning{
+    @include text-align(center);
+    @include font-size(.12rem);
+    @include margin(0.4rem 0 0 0)
+  }
+  .s-other{
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    @include margin(.6rem 0 0 0);
+    p:nth-child(1){
+      @include rect(.54rem, 1px);
+      border:1px solid #ccc;
+      @include background-color(#ccc);
+    }
+    p:nth-child(2){
+      @include font-size(.12rem);
+      @include margin(0 0.1rem 0 0.1rem)
+    }
+    p:nth-child(3){
+      @include rect(.54rem, 1px);
+      border:1px solid #ccc;
+      @include background-color(#ccc);
+    }
+  }
+  .s-logo{
+    @include flexbox();
+    @include justify-content(center);
+    @include margin(0.3rem 0 0 0);
+    span:nth-child(1){
+      @include font-size(.26rem);
+    }
+    span:nth-child(2){
+      @include font-size(.29rem);
+      @include margin(0 0.6rem 0 0.6rem);
+    }
+    span:nth-child(3){
+      @include font-size(.3rem);
+    }
+  }
+}

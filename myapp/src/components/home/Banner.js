@@ -5,10 +5,10 @@ const Bann = ({ bannerlist }) => (
     <Carousel
       autoplay
       infinite
-      style={{ display: 'inline-block', width: '100%', height: 196 }}>
+      style={{ display: 'inline-block', width: '100%', height: 146 }}>
       {bannerlist.map((val, index) => (
-        <a key={index} href="http://www.alipay.com" style={{ display: 'inline-block', width: '100%', height: 196 }} >
-          <img src={val.banner} alt="" style={{ width: '100%',height: 196, verticalAlign: 'top' }} /></a>
+        <a key={index} href="http://www.alipay.com" style={{ display: 'inline-block', width: '100%', height: 146 }} >
+          <img src={val.banner} alt="" style={{ width: '100%',height: 146, verticalAlign: 'top' }} /></a>
       ))}
     </Carousel>
 )

@@ -36,3 +36,37 @@
     }
   }
 }
+
+
+
+
+
+.steup-box{
+  @include font-weight(bold);
+  @include color(#444);
+  .am-list-content{
+    @include font-size(.13rem !important); 
+  }
+  .am-list-item-middle {
+    border-bottom:1px solid #ccc;
+  }
+  .steup-top{
+    @include rect(100%, .45rem);
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    span:nth-child(1){
+      @include font-size(.16rem);
+      @include margin(0 0 0 0.1rem);
+    }
+    span:nth-child(2){
+      @include font-size(.18rem);
+      @include margin(0 0.15rem 0 0)
+    }
+  }
+  .steip-content2{
+    @include margin(0.1rem 0 0 0);
+    @include font-weight(bold);
+    @include color(#444);
+  }
+}

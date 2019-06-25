@@ -172,3 +172,55 @@
     }
   }
 }
+
+.r-box{
+  @include rect(100%, 100%);
+  @include background-color(#fff);
+  .r-return{
+    @include flexbox();
+    @include align-items(center);
+    @include rect(100%, .6rem);
+    @include margin(0 0 0 0.25rem);
+  }
+  .r-title{
+    @include text-align(center);
+    @include font-size(.26rem);
+    @include margin(0.4rem 0 0 0);
+  }
+  form{
+    @include margin(0.5rem 0 0 0);
+    div{
+      @include flexbox();
+      @include align-items(center);
+      @include margin(0.15rem auto 0);
+      @include rect(60%, .4rem);
+      border-bottom: 1px solid#ccc;
+      span{
+        @include font-size(.18rem);
+        @include margin(0 .1rem);
+      }
+      input{
+        @include rect(60%, .3rem);
+        border:0;
+      }
+      .r-button {
+        @include rect(.6rem, .2rem);
+        @include background-color(#fff);
+        border:1px solid #ccc;
+        @include margin(0 0 0 0.1rem);
+      }
+      .r-te{
+        @include padding(0 0 0 0.12rem);
+      }
+    }
+  }
+  .r-register{
+    @include text-align(center);
+    @include line-height(.46rem);
+    @include font-size(.2rem);
+    @include rect(1.97rem, .46rem);
+    border:1px solid #ccc;
+    border-radius: .23rem;
+    @include margin(0.8rem auto 0);
+  }
+}

@@ -5,6 +5,7 @@ import Details from '@/layout/Details';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import store from '@/store/store';
+import 'antd-mobile/dist/antd-mobile.css';
 import { HashRouter, Switch, Route } from 'react-router-dom'
 ReactDOM.render(
   <Provider store = {store}>

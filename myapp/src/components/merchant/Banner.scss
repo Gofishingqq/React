@@ -1,7 +1,13 @@
-.zi{
+.slider-frame{
+  border:0.01rem solid #BBBBBB ;
+  border-left: 0;
+  border-right: 0;
+  .zi{
     padding-top: 0.25rem;
+    margin-bottom: .17rem;
   p{
     padding-left: .05rem;
     font: 0.14rem/0.30rem"";
   }
+}
 }

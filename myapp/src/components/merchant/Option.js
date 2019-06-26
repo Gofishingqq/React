@@ -1,32 +1,18 @@
 import React from 'react';
-import { Tabs } from 'antd-mobile';
-
-class Demo extends React.Component {
-  renderContent = tab =>
-    (<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-      <p>Content of {tab.title}</p>
-    </div>);
-
-  render() {
-    const tabs = [
-      { title: '1st Tab' },
-      { title: '2nd Tab' },
-      { title: '3rd Tab' },
-      { title: '4th Tab' },
-      { title: '5th Tab' },
-      { title: '6th Tab' },
-      { title: '7th Tab' },
-      { title: '8th Tab' },
-      { title: '9th Tab' },
-    ];
-
-    return (
-      <div>
-        <Tabs tabs={tabs} renderTabBar={props => <Tabs.DefaultTabBar {...props} page={3} />}>
-          {this.renderContent}
-        </Tabs>
+import './OP.scss';
+class Bu extends React.Component {
+  render () {
+    return(
+      <div className="content">
+        <ul className="opti">
+          <li>全部</li>
+          <li>名包</li>
+          <li>名表</li>
+          <li>饰品</li>
+          <li>名鞋</li>
+        </ul>
       </div>
-    );
+    )
   }
 }
-export default Demo;
+export default Bu;

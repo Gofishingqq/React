@@ -29,50 +29,71 @@
   .option-in{
     @include flexbox();
     @include rect(100%, auto);
-    justify-content: center;
     background: #fff;
+    justify-content: center;
     li{
-      @include rect(1.75rem, 1.2rem);
-      border: 0.01rem solid #D5D0D0;
-      margin:0.1rem 0 .29rem 0;
-      
+      @include rect(1.75rem, auto);
+      margin-top: .1rem;
+      .te{
+        @include rect(1.75rem, 1.2rem);
+        background:  #D5D0D0;
+        img{
+          @include rect(100%, 100%);
+        }
+      }
+      p{
+        font: .14rem/.28rem"";
+        color: #333;
+        text-align: center;
+      }
     }
     b{
       width: .03rem;
     }
   }
-  .like{
+  .brand{
+    margin-top: .28rem;
     @include flexbox();
-    @include rect(100%, .32rem);
-    justify-content: center;
-    align-items: center;
-    b{
-      @include rect(0.4rem, .01rem);
-      background: #dfdfdf;
-      margin: 0 .03rem;
+    @include flex-direction(column);
+    padding: 0 0.1rem;
+    @include rect(100%, 1.98rem);
+    background:#fff;
+    h4{
+      padding: .13rem 0;
+      font: .17rem"";
     }
-    span{
-      font: 0.12rem "";
-      color:#DDD8D8 ;
+    li{
+      @include rect(3.55rem, 1.40rem);
+      background: #333;
     }
   }
-  .option-bottom{
+  .like{
+    margin-top: .28rem;
     @include flexbox();
-    flex-wrap: wrap;
-    @include rect(100%, auto);
-    justify-content: center;
-    li{
+    @include flex-direction(column);
+    height: 1.8rem;
+    background:#fff;
+    h4{
+      padding: .11rem 0 .13rem 0.1rem;
+      @include rect(100%, auto);
+      font: .17rem"";
+    }
+    .tux{
+      @include overflow();
       @include flexbox();
-      @include flex-direction(column);
-      @include rect(1.60rem, auto );
-      margin: 0.05rem 0.05rem;
-      img{
-        @include rect(100%, 1.22rem );
-        background: #eee;
-      }
-      p{
-        @include rect(100%, .25rem );
-        font: 0.12rem/0.2rem"";
+      margin: 0 .07rem;
+      @include rect(100%, 1.2rem);
+      li{
+        margin: 0 .03rem;
+        height: 1.20rem;
+        flex: 0 0 1.5rem;
+        // @include rect(100%, 1.20rem);
+        background: #333;
+        border-radius: .12rem;
+        img{
+          @include rect(100%, 100%);
+          border-radius: .12rem;
+        }
       }
     }
   }

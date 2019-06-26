@@ -1,0 +1,16 @@
+@import '@/lib/reset.scss';
+.content{
+  @include flexbox();
+  @include flex-direction(column);
+  @include rect(100%, auto);
+  .opti{
+    @include rect(3.08rem, .5rem);
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    li{
+      font: .12rem"";
+    }
+  }
+}

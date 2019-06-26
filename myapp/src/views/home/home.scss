@@ -19,6 +19,6 @@ html, body, #root, .container {
     @include flex();
     @include rect(100%, auto);
     @include flex-direction(column);
-    @include overflow()
+    @include overflow();
   }
 }

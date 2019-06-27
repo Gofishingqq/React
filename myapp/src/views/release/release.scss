@@ -1,0 +1,56 @@
+@import '@/lib/reset.scss';
+html, body, #root, .container {
+  font-size: 0.266666vw;
+  @include rect(100%, 100%);
+}
+.container {
+  @include flexbox();
+  @include flex-direction(column);
+}
+.release-box {
+  @include flex();
+  @include rect(100%, auto);
+  @include flexbox();
+  @include flex-direction(column);
+  background: #fff;
+  .content{
+    @include flexbox();
+    @include flex-direction(column);
+    @include rect(100%, auto);
+    .Release{
+      @include flexbox();
+      @include flex-direction(column);
+      @include rect(100%, auto);
+      margin-top: .44rem;
+      li{
+        @include flexbox();
+        @include flex-direction(column);
+        @include rect(3.43rem, .8rem);
+        margin: .2rem auto;
+        border: .01rem solid #999;
+        border-radius: .08rem;
+        color: #333;
+        p{
+          margin:.14rem 0 0 .26rem;
+          @include flexbox();
+          b{
+            @include rect(.28rem, .25rem);
+            background: #444;
+          }
+          s{
+            margin: .09rem 0 0 .04rem;
+            font: .14rem"";
+          }
+        }
+        span{
+          margin:.1rem 0 0 0.28rem;
+          @include rect(2.84rem, auto);
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          font: 0.12rem"";
+        }
+      }
+    }
+  }
+}

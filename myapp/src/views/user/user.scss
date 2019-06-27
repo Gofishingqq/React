@@ -9,6 +9,9 @@
     @include background-color(#fff);
     @include rect(100%, 2rem);
     .u-set{
+      .shezhi{
+        @include color(#333);
+      }
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -60,7 +63,7 @@
       @include flexbox();
       // @include flex-direction(column);
       @include justify-content(space-between);
-      span{
+      span:nth-child(1){
         @include margin(0 .3rem 0 .1rem);
       }
     }

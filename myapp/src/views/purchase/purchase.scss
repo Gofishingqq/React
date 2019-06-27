@@ -1,19 +1,19 @@
 @import '@/lib/reset.scss';
 .p-box{
-  @include font-weight(bold);
+  // @include font-weight(bold);
   @include flexbox();
   @include flex-direction(column);
   @include flex();
   @include rect(100%, 100%);
   .p-top{
     position:relative;
-    @include font-weight(bold);
+    // @include font-weight(bold);
     @include flexbox();
     @include rect(100%, .45rem);
     @include align-items(center);
     span:nth-child(1){
-      @include font-size(.15rem);
-      @include margin(0 0 0 0.15rem);
+      @include font-size(.1rem);
+      @include margin(0 0 0 0.1rem);
     }
     span:nth-child(2){
       @include text-align(center);
@@ -33,16 +33,7 @@
     @include flex-direction(column);
     @include flex();
     @include rect(100%, 100%);
-    ul{
-      @include flexbox();
-      @include justify-content(space-around);
-      border-bottom: 1px solid #ccc;
-      li{
-        @include font-size(.15rem);
-        @include padding(0.05rem 0 0.05rem 0);
-        @include margin(0.1rem 0 0.1rem 0);
-      }
-    }
+    
     .p-main{
       @include flexbox();
       @include flex();

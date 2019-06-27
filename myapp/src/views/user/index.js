@@ -1,19 +1,16 @@
 import { connect } from 'react-redux';
 import UI from './Ui';
-import api from '@/api';
-const mapState = ( state ) => ({
-  userBe: state.User.userBe
+const mapStateToProps = ( store ) => ({
+  index: store.User.index
 })
-const mapDad = (dispatch) => ({
-  getyUser () {
-    api.regGet('v6/config/channelhome?nav_id=1&ves=1&cl=mweb&uc=215').then(data =>{
-      console.log(data)
-      dispatch({
-        type: 'BeUser',
-        data: data.blocks[0].contents
-      })
+const mapDispatchToProps = (dispatch) => ({
+  getindex (index) {
+    dispatch({
+      type: 'changeindex',
+      data:index
     })
+    // console.log(index)
   }
 })
-const Con = connect(mapState,mapDad)(UI)
+const Con = connect(mapStateToProps,mapDispatchToProps)(UI)
 export default Con;

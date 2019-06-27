@@ -1,20 +1,22 @@
 import React from 'react';
-import './user.scss'
-import purchase from './purchase/purchase';
-import { Switch, Route, Link } from 'react-router-dom';
+import './user.scss';
+import {  Link } from 'react-router-dom';
 
 class user extends React.Component {
   componentDidMount () {
-    // console.log(this.props)
-    this.props.getyUser();
+    // this.props.getyUser();
   }
+
   render () {
+    console.log(this.props)
     return (
       <div className="box">
         <div className="u-box">
           <div className = "u-top">
             <div className="u-set">
+              <Link className="shezhi" to='/details/steup'>
               <span className="iconfont icon-shezhi"></span>
+              </Link>
               <span className="iconfont icon-xinxiduanxinxiaoxitixingyoujiansixinyouxiang"></span>
             </div>
             <div className="u-head">
@@ -41,25 +43,24 @@ class user extends React.Component {
           <div className="u-order">
             <div className="u-my">
               <span>我的订单</span>
-              <span>查看更多订单</span>
+              <span onClick={() => ( this.props.history.push('/details/purchase'))} className="left">
+                <span>查看更多订单</span>
+              </span>
             </div>
             <ul>
-              <Switch>
-                <Route path = "/user/purchase" component = { purchase }/>
-              </Switch>
-              <Link className="u-li" to="/user/purchase">
+              <Link className="u-li" onClick={() => {this.props.getindex(0)} } to="/details/purchase">
                 <div className="payment"></div>
                 <p>待支付</p>
               </Link>
-              <Link className="u-li" to="/user/purchase">
+              <Link className="u-li" onClick={() => {this.props.getindex(1)}} to="/details/purchase">
                 <div className="payment"></div>
                 <p>待支付</p>
               </Link>
-              <Link className="u-li" to="/user/purchase">
+              <Link className="u-li" onClick={() => {this.props.getindex(2)}} to="/details/purchase">
                 <div className="payment"></div>
                 <p>待支付</p>
               </Link>
-              <Link className="u-li" to="/user/purchase">
+              <Link className="u-li" onClick={() => {this.props.getindex(3)}} to="/details/purchase">
                 <div className="payment"></div>
                 <p>待支付</p>
               </Link>

@@ -1,10 +1,11 @@
 const reducer = (state = {
-  userBe: []
+  index:0
 },action) => {
   const { type,data } = action
   switch (type) {
-  case 'BeUser':
-    return Object.assign({}, state, { userBe:data });
+  case 'changeindex':
+    // console.log(state.index)
+    return Object.assign({}, state, { index:data });
   default:
     return state;
   }

@@ -10,4 +10,4 @@ const reducer = combineReducers ({
   Home, Cart, Kind, Release, User,Particulars
 })
 const Duo = createStore(reducer);
-export default Duo
+export default Duo;

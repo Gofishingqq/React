@@ -1,9 +1,11 @@
 import React from 'react';
 import '@/components/user/information.scss';
-const Com = () => (
+const Com = (props) => (
   <div className="box">
     <div className="top">
-      <span className="iconfont icon-arrow-left"></span>
+      <span onClick={() => ( props.history.go(-1))} className="left">
+        <span className="iconfont icon-arrow-left"></span>
+      </span>
       <span>我的资料</span>
       <span>保存</span>
     </div>

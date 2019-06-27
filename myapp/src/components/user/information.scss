@@ -56,7 +56,7 @@
     @include align-items(center);
     @include justify-content(space-between);
     span:nth-child(1){
-      @include font-size(.16rem);
+      @include font-size(.1rem);
       @include margin(0 0 0 0.1rem);
     }
     span:nth-child(2){

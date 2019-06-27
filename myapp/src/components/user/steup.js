@@ -7,16 +7,19 @@ class ListExample extends React.Component {
   state = {
     disabled: false,
   }
+
   render() {
     return (
     <div className="steup-box">
       <div className="steup-top">
-        <span className="iconfont icon-arrow-left"></span>
+        <span onClick={() => ( this.props.history.go(-1))} className="left">
+          <span  className="iconfont icon-arrow-left"></span>
+        </span>
         <span>设置</span>
         <span></span>
       </div>
       <div className="steip-content1">
-        <Item arrow="horizontal" multipleLine onClick={() => {console.log(1)}}>
+        <Item arrow="horizontal" multipleLine onClick={() => {this.props.history.push('/details/information')}}>
           个人信息 
         </Item>
         <Item arrow="horizontal" multipleLine onClick={() => {console.log(1)}}>

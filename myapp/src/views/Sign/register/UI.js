@@ -1,12 +1,13 @@
 import React from 'react';
-import './sign.scss'
+import '../sign.scss'
 
 class Com extends React.Component {
   render () {
     return (
       <div className="r-box">
         <div className="r-return">
-          <span className="iconfont icon-arrow-left"></span>
+          <span onClick={() => ( this.props.history.go(-1))}>返回</span>
+          <span onClick = {() => {this.props.history.push('/details/sign')}}>登陆</span>
         </div>
         <p className="r-title">用户注册</p>
         <form>

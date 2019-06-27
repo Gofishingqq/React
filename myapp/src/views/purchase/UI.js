@@ -29,7 +29,6 @@ class purchase extends React.Component {
         </div>
         <div className="p-content">
           <Tabs tabs={tabs}
-            initialPage={this.props}
             initialPage={this.state.index}
             onChange={(tab, index) => { console.log('onChange', index, tab); }}
             onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}

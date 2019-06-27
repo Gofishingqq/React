@@ -4,9 +4,9 @@ import information from '@/components/user/information';
 import steup from '@/components/user/steup';
 import { Switch, Route } from 'react-router-dom';
 import Purchase from '@/views/purchase'
-import Administration from '@/views/Sign/Administration'
-import Sign from '@/views/Sign/sign'
-import register from '@/views/Sign/register'
+import Administration from '@/views/Sign/Administration/Administration'
+import Sign from '@/views/Sign/sign/sign'
+import register from '@/views/Sign/register/register'
 
 const Details = () => (
   <div className="container">

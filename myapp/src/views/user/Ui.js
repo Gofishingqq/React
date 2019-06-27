@@ -5,10 +5,16 @@ import {  Link } from 'react-router-dom';
 class user extends React.Component {
   componentDidMount () {
     // this.props.getyUser();
+    console.log(this.props)
+    if (this.props.signtype !== 2) {
+      console.log("失败")
+      this.props.history.push('/details/administration')
+    } else {
+      console.log("成功")
+    }
   }
 
   render () {
-    console.log(this.props)
     return (
       <div className="box">
         <div className="u-box">

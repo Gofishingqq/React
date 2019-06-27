@@ -1,4 +1,6 @@
 import React from 'react';
+import Content from '@/components/release/content';
+import './release.scss'
 class release extends React.Component {
   componentDidMount () {
     // console.log(this.props)
@@ -6,8 +8,8 @@ class release extends React.Component {
   }
   render () {
     return (
-      <div className="box">
-        发布
+      <div className="release-box">
+        <Content />
       </div>
     )
   }

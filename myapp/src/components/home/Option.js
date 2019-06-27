@@ -1,5 +1,4 @@
 import React from 'react';
-import '../homeSass/OPtion.scss'
 const Option = () => (
   <div className = "option">
    <ul className = "option-top">
@@ -30,6 +29,10 @@ const Option = () => (
     <div className="like">
       <h4>猜你喜欢</h4>
       <ul className="tux">
+        <li><img src="" alt=""/></li>
+        <li><img src="" alt=""/></li>
+        <li><img src="" alt=""/></li>
+        <li><img src="" alt=""/></li>
         <li><img src="" alt=""/></li>
         <li><img src="" alt=""/></li>
         <li><img src="" alt=""/></li>

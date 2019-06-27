@@ -1,4 +1,6 @@
 import React from 'react';
+import Cart from '@/components/cart/Cart';
+import './cart.scss'
 class cart extends React.Component {
   componentDidMount () {
     // console.log(this.props)
@@ -6,8 +8,8 @@ class cart extends React.Component {
   }
   render () {
     return (
-      <div className="box">
-        购物车
+      <div className="cart-box">
+        <Cart />
       </div>
     )
   }

@@ -1,11 +1,17 @@
 import React from 'react';
 import { List, Switch } from 'antd-mobile';
 import './information.scss';
+import { Button, WhiteSpace } from 'antd-mobile';
 const Item = List.Item;
 
 class ListExample extends React.Component {
   state = {
     disabled: false,
+  }
+
+  out () {
+    this.props.getindex(4)
+    this.props.history.push('/details/administration')
   }
 
   render() {
@@ -58,6 +64,9 @@ class ListExample extends React.Component {
         <Item arrow="horizontal" multipleLine onClick={() => {console.log(1)}}>
           关于奢侈二手交易(V1.18) 
         </Item>
+      </div>
+      <div className="out">
+        <Button type="warning" onClick={()=> {this.out()}}>退出登陆</Button><WhiteSpace />
       </div>
     </div>
     );

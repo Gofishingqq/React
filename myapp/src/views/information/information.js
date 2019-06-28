@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/components/user/information.scss';
+import '@/views/setup/information.scss';
 const Com = (props) => (
   <div className="box">
     <div className="top">

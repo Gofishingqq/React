@@ -7,8 +7,8 @@ class Com extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      tel:'987621',
-      password:'123465'
+      tel:'15955957530',
+      password:'123456'
     }
   }
 
@@ -26,13 +26,15 @@ class Com extends React.Component {
           Toast.info('登陆失败', 1.5);
         }else if (res.data === 1) {
           Toast.info('登陆成功,三秒后跳转页面', 1.5);
-          this.props.getsigntype(res.data)
+          console.log(res.data)
+          this.props.changeindex(res.data)
+          // this.props.changeindex(1)
           setTimeout( () => {
             this.props.history.push('/home')
           }, 3000 )
         }else if (res.data === 2) {
           Toast.info('没有该用户', 1.5);
-          console.log(this)
+          // console.log(this)
         }else if (res.data === -1) {
           Toast.info('密码错误', 1.5);
         }

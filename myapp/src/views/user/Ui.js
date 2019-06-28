@@ -5,9 +5,9 @@ import {  Link } from 'react-router-dom';
 class user extends React.Component {
   componentDidMount () {
     // this.props.getyUser();
-    console.log(this.props)
-    if (this.props.signtype !== 2) {
-      console.log("失败")
+    // console.log(this.props)
+    if (this.props.index !== 1) {
+      // console.log(this)
       this.props.history.push('/details/administration')
     } else {
       console.log("成功")
@@ -56,7 +56,7 @@ class user extends React.Component {
             <ul>
               <Link className="u-li" onClick={() => {this.props.getindex(0)} } to="/details/purchase">
                 <div className="payment"></div>
-                <p>待支付</p>
+                <p>全 部</p>
               </Link>
               <Link className="u-li" onClick={() => {this.props.getindex(1)}} to="/details/purchase">
                 <div className="payment"></div>
@@ -64,11 +64,11 @@ class user extends React.Component {
               </Link>
               <Link className="u-li" onClick={() => {this.props.getindex(2)}} to="/details/purchase">
                 <div className="payment"></div>
-                <p>待支付</p>
+                <p>待发货</p>
               </Link>
               <Link className="u-li" onClick={() => {this.props.getindex(3)}} to="/details/purchase">
                 <div className="payment"></div>
-                <p>待支付</p>
+                <p>待收货</p>
               </Link>
             </ul>
           </div>
@@ -80,25 +80,25 @@ class user extends React.Component {
               </li>
               <li>
                 <div></div>
-                <p>我的鉴定</p>
+                <p>我的回收</p>
               </li>
               <li>
                 <div></div>
-                <p>我的鉴定</p>
+                <p>我的养护</p>
               </li>
             </ul>
             <ul>
               <li>
                 <div></div>
-                <p>我的鉴定</p>
+                <p>我要找货</p>
               </li>
               <li>
                 <div></div>
-                <p>我的鉴定</p>
+                <p>我的店铺</p>
               </li>
               <li>
                 <div></div>
-                <p>我的鉴定</p>
+                <p>意见反馈</p>
               </li>
             </ul>
           </div>

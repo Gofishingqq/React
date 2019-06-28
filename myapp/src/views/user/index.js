@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import UI from './Ui';
 const mapStateToProps = ( store ) => ({
-  index: store.User.index,
-  signtype: store.Sign.signtype
+  index: store.User.index
+  // signtype: store.Sign.signtype
 })
 const mapDispatchToProps = (dispatch) => ({
   getindex (index) {
@@ -10,7 +10,6 @@ const mapDispatchToProps = (dispatch) => ({
       type: 'changeindex',
       data:index
     })
-    // console.log(index)
   }
 })
 const Con = connect(mapStateToProps,mapDispatchToProps)(UI)

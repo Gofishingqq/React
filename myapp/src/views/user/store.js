@@ -1,5 +1,5 @@
 const reducer = (state = {
-  index:0
+  index:0//登陆状态
 },action) => {
   const { type,data } = action
   switch (type) {

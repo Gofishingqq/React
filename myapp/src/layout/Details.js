@@ -1,7 +1,7 @@
 import React from 'react';
 import Particulars from '@/views/particulars'
-import information from '@/components/user/information';
-import steup from '@/components/user/steup';
+import information from '@/views/information/information';
+import steup from '@/views/setup/setup';
 import { Switch, Route } from 'react-router-dom';
 import Purchase from '@/views/purchase'
 import Administration from '@/views/Sign/Administration/Administration'

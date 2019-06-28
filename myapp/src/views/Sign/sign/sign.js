@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
 import UI from './UI';
 const mapStateToProps = ( store ) => ({
-  signtype: store.Sign.signtype
+  index:store.User.index
 })
 const mapDispatchToProps = (dispatch) => ({
-  getsigntype (data) {
-    dispatch({
-      type: 'changesigntype',
-      data
-    })
-  }
+    changeindex (data) {
+      dispatch({
+        type: 'changeindex',
+        data
+      })
+    }
 })
 const Con = connect(mapStateToProps,mapDispatchToProps)(UI)
 export default Con;

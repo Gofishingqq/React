@@ -6,6 +6,7 @@ html, body, #root, .container {
 .container {
   @include flexbox();
   @include flex-direction(column);
+  @include rect(100%, auto);
   .home-box {
     @include flex();
     @include rect(100%, auto);
@@ -106,7 +107,7 @@ html, body, #root, .container {
           @include rect(100%, 1.98rem);
           background:#fff;
           h4{
-            padding: .13rem 0;
+            margin: .13rem 0;
             font: .17rem"";
           }
           li{
@@ -129,8 +130,8 @@ html, body, #root, .container {
           }
           .tux{
             @include flexbox();
-            margin: 0 .1rem;
             @include rect(100%, auto);
+            padding: 0 0.1rem;
             @include overflow();
             li{
               flex: 0 0 1.5rem;

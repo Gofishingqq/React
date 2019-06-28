@@ -1,4 +1,7 @@
 import React from 'react';
+import Store from '@/components/Kind/search';
+import Kind from '@/components/Kind/list';
+import './Kind.scss'
 class kind extends React.Component {
   componentDidMount () {
     // console.log(this.props)
@@ -6,8 +9,11 @@ class kind extends React.Component {
   }
   render () {
     return (
-      <div className="box">
-        分类
+      <div className="Kind-box">
+        <Store />
+        <div className="Kind-package">
+          <Kind />
+        </div>
       </div>
     )
   }

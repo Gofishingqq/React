@@ -10,24 +10,22 @@ const Option = () => (
   <ul className = "option-in">
     <li>
       <div className="te">
-        <img src="" alt=""/>
       </div>
       <p>欧洲尖货</p>
     </li>
     <b></b>
     <li>
-    <div className="te">
-        <img src="" alt=""/>
+    <div className="te1">
       </div>
       <p>买手精选</p>
     </li>
   </ul>
   <ul className="brand">
-    <h4>轻奢品牌</h4>
-    <li><img src="" alt=""/></li>
+    <h4>轻奢品牌<em></em></h4>
+    <li></li>
   </ul>
     <div className="like">
-      <h4>猜你喜欢</h4>
+      <h4>猜你喜欢<em></em></h4>
       <ul className="tux">
         <li><img src="" alt=""/></li>
         <li><img src="" alt=""/></li>

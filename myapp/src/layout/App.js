@@ -22,11 +22,11 @@ const App = () => (
     </Switch>
     <footer className="footer">
       <ul>
-        <NavLink to="/home"><b></b><span>首页</span></NavLink>
-        <NavLink to="/kind"><b></b><span>分类</span></NavLink>
-        <NavLink to="/release"><b></b></NavLink>
-        <NavLink to="/cart"><b></b><span>购物车</span></NavLink>
-        <NavLink to="/user"><b></b><span>我的</span></NavLink>
+        <NavLink to="/home"><span className="te1 iconfont icon-yemian-copy-copy"></span><span>首页</span></NavLink>
+        <NavLink to="/kind"><span className="te2 iconfont icon-leimupinleifenleileibie"></span><span>分类</span></NavLink>
+        <NavLink to="/release"><span className="te3 iconfont icon-tianjia"></span></NavLink>
+        <NavLink to="/cart"><span className="te4 iconfont icon-gouwuche"></span><span>购物车</span></NavLink>
+        <NavLink to="/user"><span className="te5 iconfont icon-yonghu"></span><span>我的</span></NavLink>
       </ul>
     </footer>
   </div>

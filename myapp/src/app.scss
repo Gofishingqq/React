@@ -25,62 +25,25 @@ html, body, #root, .container {
         @include justify-content();
         @include align-items();
         @include text-color(#333);
-        &:nth-child(1) b{
-          @include rect(.22rem,.22rem);
-          background: url('./image/home/首页@2x(1).png');
-          background-size: 100% 100%;
+        .te1{
+          @include font-size(.23rem !important);
         }
-        &:nth-child(2) b{
-          @include rect(.22rem,.22rem);
-          background: url('./image/home/分类@2x(1).png');
-          background-size: 100% 100%;
+        .te3{
+          @include font-size(.4rem !important);
         }
-        &:nth-child(3) b{
-          display: block;
-          z-index: 1;
-          @include rect(.48rem,.48rem);
-          background: url('./image/home/发布@2x(1).png');
-          background-size: 100% 100%;
-          margin-top: -.16rem;
+        .te4{
+          @include font-size(.23rem !important);
         }
-        &:nth-child(4) b{
-          @include rect(.22rem,.22rem);
-          background: url('./image/home/购物车@2x.png');
-          background-size: 100% 100%;
+
+        span:nth-child(1){
+          @include font-size(.2rem);
         }
-        &:nth-child(5) b{
-          @include rect(.22rem,.22rem);
-          background: url('./image/home/我的 @2x.png');
-          background-size: 100% 100%;
-        }
-        span{
-          font: .12rem "";
+        span:nth-child(2){
+          @include font-size(.12rem);
         }
       }
-      a:hover{
-        &:nth-child(1) b{
-          background: url('./image/home/首页@2x.png');
-          background-size: 100% 100%;
-        }
-        &:nth-child(2) b{
-          background: url('./image/home/分类@2x.png');
-          background-size: 100% 100%;
-        }
-        &:nth-child(3) b{
-          background: url('./image/home/发布@2x.png');
-          background-size: 100% 100%;
-        }
-        &:nth-child(4) b{
-          background: url('./image/home/购物车 @2x.png');
-          background-size: 100% 100%;
-        }
-        &:nth-child(5) b{
-          background: url('./image/home/我的@2x.png');
-          background-size: 100% 100%;
-        }
-        span{
-          color: #F69679;
-        }
+      .active{
+        @include color(#FFA732);
       }
     }
   }

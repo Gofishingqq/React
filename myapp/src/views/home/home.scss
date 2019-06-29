@@ -1,12 +1,12 @@
 @import '@/lib/reset.scss';
 html, body, #root, .container {
   font-size: 0.266666vw;
-  @include rect(100%, 100%);
 }
 .container {
   @include flexbox();
   @include flex-direction(column);
   @include rect(100%, auto);
+  margin: 0 auto;
   .home-box {
     @include flex();
     @include rect(100%, auto);
@@ -20,24 +20,26 @@ html, body, #root, .container {
       .for{
         @include flexbox();
         @include rect(100%, 100%);
-        margin: 0.1rem;
         @include justify-content();
-        .text, .button{
+        align-items: center;
+        .text{
           border: 0;
           border: .01rem solid #CCCCCC;
         }
         .text {
           @include rect(2.95rem, .26rem);
-          margin-right: 0.1rem;
-          padding-left: 0.15rem;
-          border-radius: 0.13rem;
-          color: #999999;
+          margin-right: 0.15rem;
+          padding-left: 0.26rem;
+          border-radius: 0.04rem;
+          color: hsl(0, 0%, 60%);
+          background: url(../../image/home/search-icon@2x.png) no-repeat .04rem #f5f5f5;
+          background-size: .16rem .16rem;
         }
         .button {
-          @include rect(0.36rem, .26rem);
+          @include rect(0.18rem, .19rem);
           border-radius: 0.05rem;
-          background: #fff;
-          color: #000;
+          background: url(../../image/home/message-icon@2x.png) no-repeat;
+          background-size: 100% 100%;
         }
       }
     }
@@ -84,10 +86,13 @@ html, body, #root, .container {
             margin-top: .1rem;
             .te{
               @include rect(1.75rem, 1.2rem);
-              background:  #D5D0D0;
-              img{
-                @include rect(100%, 100%);
-              }
+              background: url(../../image/home/723.png) no-repeat;
+              background-size: 100% 100%;
+            }
+            .te1{
+              @include rect(1.75rem, 1.2rem);
+              background: url(../../image/home/买手精选@2x.png) no-repeat;
+              background-size: 100% 100%;
             }
             p{
               font: .14rem/.28rem"";
@@ -107,13 +112,23 @@ html, body, #root, .container {
           @include rect(100%, 1.98rem);
           background:#fff;
           h4{
-            margin: .13rem 0;
+            @include flexbox();
+            @include rect(100%, .43rem);
             font: .17rem"";
+            justify-content: space-between;
+            align-items: center;
+            em{
+              margin: 0 .1rem;
+              @include rect(.06rem, .12rem);
+              background: url(../../image/home/icon@2x.png);
+              background-size: 100% 100%;
+            }
           }
           li{
             @include rect(3.55rem, 1.40rem);
             margin: 0 auto;
-            background: #333;
+            background: url(../../image/home/banner5@2x.png) no-repeat;
+            background-size: 100% 100%;
           }
         }
         .like{
@@ -123,10 +138,20 @@ html, body, #root, .container {
           @include rect(100%, auto);
           height: 1.8rem;
           background:#fff;
+          margin-bottom: .22rem;
           h4{
-            padding: .11rem 0 .13rem 0.1rem;
-            @include rect(100%, auto);
+            @include flexbox();
+            @include rect(100%, .41rem);
+            padding-left: .1rem;
             font: .17rem"";
+            justify-content: space-between;
+            align-items: center;
+            em{
+              margin: 0 .1rem;
+              @include rect(.06rem, .12rem);
+              background: url(../../image/home/icon@2x.png);
+              background-size: 100% 100%;
+            }
           }
           .tux{
             @include flexbox();
